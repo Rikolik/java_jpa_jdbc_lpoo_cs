@@ -1,0 +1,13 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+    <persistence-unit name="pu_CS" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/CS"/>
+            <property name="javax.persistence.jdbc.user" value="postgres"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>
